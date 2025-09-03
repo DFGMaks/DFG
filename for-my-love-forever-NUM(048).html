@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <div style="text-align: left;">
-    <button onclick="window.location.href='https://t.me/MEOW_MUR920'">Morunka!</button>
-    <button onclick="location.reload()">Мы! </button>
-    <button onclick="window.location.href='https://t.me/DFGMaks'">DFG</button>
-</div>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <h1>Привет мой дорогой Морун!</h1>
-    <p>Ты сделал мой мир счастливее, без тебя я был бы пуст и одинок внутри души, я бы больше грустил и не замечал позитива вокруг себя, надеюсь наша любовь будет вечна, без нашей любви, для меня мир был без смысла существования и радостных моментов что наполняли бы меня. Я бы умер так и не почуствовав любви от откружающих и не отдав её другим. Большое спасибо тебе морунка :3 Я буду любить, ценить, уважать тебя до конца и буду старатся тебя не разочаровывать</p>
-    <img src="https://files.catbox.moe/89jrea.png" alt="Горящий человечеееек" onclick="showText()">
-    <img src="https://files.catbox.moe/yfwjso.png" alt="пузырк" style="max-width: 400px; margin-top: -100px; position: relative; top: -300px;">
-             <title>Мое настроение падает</title> 
-    <style>
-      body {
-      background-image: url('https://media.discordapp.net/attachments/1137030483109232751/1412489161134440488/Screenshot_3.png?ex=68b87a8a&is=68b7290a&hm=6e3a9875da4cf702580491d10acac07d525b043ab98c5bc628fac5738a84915f&=&format=webp&quality=lossless'); /* путь к изображению */
-      background-size: cover; /* растягивает изображение на весь экран */
-      background-repeat: no-repeat; /* отключает повторение */
-      background-position: center; /* центрирует изображение */
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Это для тебя, моя любовь</title>
+  <style>        
+    body {
+      background-image: url('https://media.discordapp.net/attachments/1137030483109232751/1412489161134440488/Screenshot_3.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+      font-family: Trebuchet MS;
+      color: rgb(0, 0, 0);
     }
-        img {
-  position: relative;
-  left: -500px;
-  transition: left 0.5s ease;
-}
-           button {
-  width: 150px;
-  height: 75px;
-  font-size: 15px;
-  padding: 10px;
-    }
-      body {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-      }
-        textarea {
-  transform: translate(250px, -450px); /* Текстарена Текстарена*/
-        width: 600px;/* размер в ширину Текстарена*/
-        height: 300px;/* Текстарена Текстарена*/
-        font-family: Trebuchet MS;
-        border: 2px solid rgb(133, 93, 93);
-         background-color: #000000;
-         color: snow;
-        }
-        textarea::placeholder {
-      color: white;
-      opacity: 0.6;
-        }
-        button {
-  border: 2px solid #6c5ce7;
-  border-radius: 8px;
-}
 
-    </style>
+    .button-panel {
+      text-align: left;
+      margin: 20px;
+    }
+
+    button {
+      width: 150px;
+      height: 75px;
+      font-size: 15px;
+      padding: 10px;
+      margin-right: 10px;
+      border: 2px solid #a80000;
+      border-radius: 8px;
+      background-color: #6d2f2f;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    textarea {
+      width: 600px;
+      height: 300px;
+      margin-top: 20px;
+      border: 2px solid rgb(140, 145, 96);
+      background-color: #000000;
+      color: rgb(255, 149, 149);
+      font-size: 16px;
+      padding: 10px;
+      position: absolute;
+      opacity: 0.9;
+    top: 225px;
+    left: 1100px;
+    }
+    .Чистаправда {
+      color: black;
+    }
+  </style>
 </head>
 <body>
-    <p style="position: relative; left: 250px; top: -450px;">А вот тутенько ты можешь написать как сильно любишь меня :3 Но к сожалению я не увижу</p>
-      <textarea id="myTextarea" rows="6" cols="50" style="color: rgba(255, 255, 255, 0.4); background-color: #000000;"></textarea></textarea>
+  <body style="margin:0; padding:0; 
+             background-image: url('https://media.discordapp.net/attachments/1137030483109232751/1412489161134440488/Screenshot_3.png?ex=68b9234a&is=68b7d1ca&hm=5d3e71b1e5a008155668b99e925ea6b32324d1384c6b4f159de4e4e74a9b21e8&=&format=webp&quality=lossless'); 
+             background-size: cover; 
+             background-position: center; 
+             background-repeat: no-repeat; 
+             height: 100vh;">
+  
+  <!-- Твой контент -->
+  <div class="Чистаяправда">
+    <p>Ты сделал мой мир счастливее...</p>
+  </div>
 
-      <script>
-    const texts = [
-      "Стоит ценить каждый момент 💞...",
-      "Глаза залитые слезами на луну медленно смотрели... 😢",
-      "Страсть пылает слово огонь между нами 😍",
-      "Лучи луны меня нежно ласкали в темноте и тоске  🌙",
-      "Что означают таблетки? 💊",
-      "Это незабываемое лето когда нибудь вернется. И встретимся мы уже вдвоем...Совсем другие"
-    ];
+</body>
+  <div class="button-panel">
+    <button onclick="window.location.href='https://t.me/MEOW_MUR920'">Morunka!</button>
+    <button onclick="location.reload()">Мы!</button>
+    <button onclick="window.location.href='https://t.me/DFGMaks'">DFG</button>
+  </div>
 
-    const randomIndex = Math.floor(Math.random() * texts.length);
-    document.getElementById("myTextarea").value = texts[randomIndex];
+  <h1>Привет мой дорогой Морун!</h1>
+
+  <div class="Чистаправда">
+    <p>Ты сделал мой мир счастливее. Без тебя я был бы пуст и одинок внутри души. Я бы больше грустил и не замечал позитива вокруг себя. Надеюсь, наша любовь будет вечна. Без неё для меня мир был бы без смысла. Я бы умер, так и не почувствовав любви. Большое спасибо тебе, морунка :3 Я буду любить, ценить, уважать тебя до конца и стараться не разочаровывать.</p>
+  </div>
+  <textarea id="myTextarea" placeholder="Напиши rainbow что-бы увидеть что я подготовил :3 (Я не знаю как его передвинуть. Он не хочет)"></textarea>
+  <br>
+  <img id="gifDisplay" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3UxNWI1OWpsc2dzcDZyOXQwb3RoanJ4YnR0dThwbWgxbGE5aGRxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Sw31ZL1vbFQGFIUbY/giphy.gif" alt="горящий человечеееек" style="top: 200px; left: 700px;">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const textarea = document.getElementById('myTextarea');
+      const gif = document.getElementById('gifDisplay');
+
+      textarea.addEventListener('input', () => {
+        const value = textarea.value.toLowerCase();
+
+        if (value.includes('rainbow')) {
+          gif.src = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb20wbDV4dHFybnQyeXAwcGp4bmZxa3d6dXV4aXlrb2pxeWhqbG01biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WG6bgfuGoXlbZVIbRM/giphy.gif';
+          gif.classList.add('rainbow');
+        } else {
+          gif.src = 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3UxNWI1OWpsc2dzcDZyOXQwb3RoanJ4YnR0dThwbWgxbGE5aGRxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Sw31ZL1vbFQGFIUbY/giphy.gif';
+          gif.classList.remove('rainbow');
+        }
+      });
+    });
   </script>
-    <h6 style="position:relative; left: -520px; top: -390px;">PRESS ME</h6>
-
 </body>
 </html>
