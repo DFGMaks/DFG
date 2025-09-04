@@ -13,6 +13,9 @@
       text-align: center;
       font-family: Trebuchet MS;
       color: rgb(0, 0, 0);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
     }
 
     .button-panel {
@@ -48,28 +51,28 @@
       padding: 10px;
       position: absolute;
       opacity: 0.9;
-    top: 225px;
-    left: 1100px;
+      top: 300px;
+      left: 1000px;
     }
+
     .Чистаправда {
       color: black;
+    }
+
+    #gifDisplay {
+      position: absolute;
+      top: 350px;
+      left: 400px;
+      width: 500px;
     }
   </style>
 </head>
 <body>
-  <body style="margin:0; padding:0; 
-             background-image: url('https://media.discordapp.net/attachments/1137030483109232751/1412489161134440488/Screenshot_3.png?ex=68b9234a&is=68b7d1ca&hm=5d3e71b1e5a008155668b99e925ea6b32324d1384c6b4f159de4e4e74a9b21e8&=&format=webp&quality=lossless'); 
-             background-size: cover; 
-             background-position: center; 
-             background-repeat: no-repeat; 
-             height: 100vh;">
-  
-  <!-- Твой контент -->
+
   <div class="Чистаяправда">
     <p>Ты сделал мой мир счастливее...</p>
   </div>
 
-</body>
   <div class="button-panel">
     <button onclick="window.location.href='https://t.me/MEOW_MUR920'">Morunka!</button>
     <button onclick="location.reload()">Мы!</button>
@@ -81,27 +84,44 @@
   <div class="Чистаправда">
     <p>Ты сделал мой мир счастливее. Без тебя я был бы пуст и одинок внутри души. Я бы больше грустил и не замечал позитива вокруг себя. Надеюсь, наша любовь будет вечна. Без неё для меня мир был бы без смысла. Я бы умер, так и не почувствовав любви. Большое спасибо тебе, морунка :3 Я буду любить, ценить, уважать тебя до конца и стараться не разочаровывать.</p>
   </div>
-  <textarea id="myTextarea" placeholder="Напиши rainbow что-бы увидеть что я подготовил :3 (Я не знаю как его передвинуть. Он не хочет)"></textarea>
+
+  <textarea id="myTextarea" placeholder="Напиши rainbow что-бы увидеть что я подготовил :3"></textarea>
   <br>
-  <img id="gifDisplay" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3UxNWI1OWpsc2dzcDZyOXQwb3RoanJ4YnR0dThwbWgxbGE5aGRxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Sw31ZL1vbFQGFIUbY/giphy.gif" alt="горящий человечеееек" style="top: 200px; left: 700px;">
+  <img id="gifDisplay" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3UxNWI1OWpsc2dzcDZyOXQwb3RoanJ4YnR0dThwbWgxbGE5aGRxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Sw31ZL1vbFQGFIUbY/giphy.gif" alt="горящий человечеееек">
+
+  <audio id="rainbowAudio" src="https://media.vocaroo.com/mp3/1jBiCpPNQIH0"></audio>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const textarea = document.getElementById('myTextarea');
       const gif = document.getElementById('gifDisplay');
+      const audio = document.getElementById('rainbowAudio');
 
       textarea.addEventListener('input', () => {
         const value = textarea.value.toLowerCase();
 
         if (value.includes('rainbow')) {
           gif.src = 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb20wbDV4dHFybnQyeXAwcGp4bmZxa3d6dXV4aXlrb2pxeWhqbG01biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WG6bgfuGoXlbZVIbRM/giphy.gif';
-          gif.classList.add('rainbow');
+          audio.play();
         } else {
           gif.src = 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3UxNWI1OWpsc2dzcDZyOXQwb3RoanJ4YnR0dThwbWgxbGE5aGRxcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Sw31ZL1vbFQGFIUbY/giphy.gif';
-          gif.classList.remove('rainbow');
+          audio.pause();
+          audio.currentTime = 0;
         }
       });
     });
   </script>
+  <style>
+  body {
+    background-image: url('https://media.discordapp.net/attachments/1137030483109232751/1412489161134440488/Screenshot_3.png?ex=68b9234a&is=68b7d1ca&hm=5d3e71b1e5a008155668b99e925ea6b32324d1384c6b4f159de4e4e74a9b21e8&=&format=webp&quality=lossless');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </body>
 </html>
+
